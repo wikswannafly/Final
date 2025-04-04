@@ -1,3 +1,12 @@
+/* Background Body */
+body {
+    background-color: #d3d3d3; /* Abu-abu */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
 #oak-header {
     background-image: url("oak.jpg");
     background-size: cover;
@@ -10,30 +19,57 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    border-bottom: 5px solid black; /* Garis pembatas bawah header */
 }
 
+/* Logo */
 .logo {
     position: absolute;
     top: 10px;
     left: 10px;
-    height: 60px;
+    height: 180px; /* Besarin biar seukuran header */
     width: auto;
 }
 
+/* Header Content */
 .header-content {
     text-align: center;
-    color: white;
     text-shadow: 1px 1px 5px black;
 }
 
-.rgb-list li a {
+/* Teks "Dikembangkan oleh" */
+.header-content h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 28px;
     font-weight: bold;
-    animation: rgbText 3s infinite;
+    animation: rgbText 3s infinite alternate;
 }
 
+/* Nama Pengembang */
+.rgb-list li a {
+    font-size: 22px; /* Dibesarin dikit */
+    font-weight: bold;
+    animation: rgbText 3s infinite alternate;
+}
+
+/* Animasi RGB */
 @keyframes rgbText {
     0% { color: red; }
     33% { color: green; }
     66% { color: blue; }
     100% { color: red; }
+}
+
+/* Body Content */
+section {
+    padding: 20px;
+    font-size: 18px; /* Dibesarin */
+}
+
+/* Garis pembatas bawah body */
+footer {
+    border-top: 5px solid black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }
